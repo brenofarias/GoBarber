@@ -9,6 +9,7 @@
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
+  "eslint.validate": [ "javascript", "javascriptreact", "html", "typescriptreact" ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
