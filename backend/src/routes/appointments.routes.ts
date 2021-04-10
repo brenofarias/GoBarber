@@ -25,7 +25,7 @@ appointmentsRouter.post('/', (req, res) => {
     return res.status(400).json({ message: 'This appointment is alredy booked' });
   }
 
-  const appointment = appointmentRepository.create(provider, parsedDate);
+  const appointment = appointmentRepository.create({ provider, date: parsedDate });
 
   return res.json(appointment);
 })
